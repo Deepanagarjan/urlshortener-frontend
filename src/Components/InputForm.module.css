@@ -1,0 +1,14 @@
+.mainContainer {
+    width: 100%;
+    margin: auto;
+}
+
+.InputGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+.BaseUrlAddon {
+    font-size: 14px;
+}
