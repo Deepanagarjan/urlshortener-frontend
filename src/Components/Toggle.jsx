@@ -1,6 +1,5 @@
 import { Button, Flex, useColorMode } from "@chakra-ui/react";
-import { MoonIcon, SunIcon } from "@chakra-ui/icons"; // Correct import for icons
-// import React from "react";
+import React from "react";
 
 const Toggle = () => {
     const { colorMode, toggleColorMode } = useColorMode();
@@ -8,8 +7,8 @@ const Toggle = () => {
     return (
         <div>
             <Flex align="center" justify="center">
-                <Button size="lg" onClick={toggleColorMode} leftIcon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}>
-                    Toggle {colorMode === "light" ? "Dark" : "Light"}
+                <Button size="lg" onClick={ () => toggleColorMode() }>
+                    Toggle { colorMode }
                 </Button>
             </Flex>
         </div>
