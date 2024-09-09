@@ -6,7 +6,7 @@ import { CSSReset, theme, ChakraProvider, ColorModeProvider, ThemeProvider } fro
 import { BrowserRouter } from 'react-router-dom';
 import axios from 'axios';
 
-const serverLocal = "http://localhost:5000";
+const serverLocal = "http://localhost:5001";
 const serverBaseUrl = import.meta.env.VITE_APP_URI;
 axios.defaults.baseURL = serverBaseUrl;
 
